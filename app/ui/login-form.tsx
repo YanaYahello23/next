@@ -1,5 +1,5 @@
-import { authenticate } from '@/app/lib/actions';
-import { lusitana } from '@/app/ui/fonts';
+'use client';
+
 import {
     AtSymbolIcon,
     KeyIcon,
@@ -8,6 +8,9 @@ import {
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
 import { useActionState } from 'react';
+import {lusitana} from "@/app/ui/fonts";
+import {authenticate} from "@/app/lib/actions";
+
 
 export default function LoginForm() {
     const [errorMessage, formAction, isPending] = useActionState(
@@ -18,13 +21,13 @@ export default function LoginForm() {
     return (
         <form action={formAction} className="space-y-3">
             <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
-                <h1 className={`${lusitana.className} mb-3 text-2xl`}>
+                <h1 className={`${lusitana.className} mb-3 text-2xl text-blue-500`}>
                     Please log in to continue.
                 </h1>
                 <div className="w-full">
                     <div>
                         <label
-                            className="mb-3 mt-5 block text-xs font-medium text-gray-900"
+                            className="mb-3 mt-5 block text-xs font-medium text-gray-500"
                             htmlFor="email"
                         >
                             Email
