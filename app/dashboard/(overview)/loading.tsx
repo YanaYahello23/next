@@ -1,4 +1,4 @@
-import DashboardSkeleton from "../ui/sckeletons";
+import DashboardSkeleton from "../../ui/sckeletons";
 
 
 export default function Loading() {
