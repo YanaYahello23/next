@@ -1,7 +1,7 @@
 import NavLinks from "./nav-links";
 import { PowerIcon } from "@heroicons/react/24/outline";
 import {signOut} from "@/auth";
-
+export const experimental_ppr = true;
 export default function SideNav() {
     return (
         <div className="flex h-full flex-col px-3 py-4 md:px-2">
